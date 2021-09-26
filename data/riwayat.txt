@@ -1,0 +1,14 @@
+b"b'imam' telah terhubung ke chat room"
+b'imam:haloi'
+b"b'biladi' telah terhubung ke chat room"
+b'biladi:sss'
+b"b'bia' telah terhubung ke chat room"
+b'bia:aaa'
+b"b'biladi' telah terhubung ke chat room"
+b'biladi:aa'
+b"b'imam' telah terhubung ke chat room"
+b'imam:a'
+b"b'biladi' telah terhubung ke chat room"
+b'biladi:aaaa'
+b"b's' telah terhubung ke chat room"
+b's:v'
