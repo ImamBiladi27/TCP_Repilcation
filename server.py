@@ -11,6 +11,7 @@ class Server:
     server.listen()
     clients = []
     nama = []
+    pasword=[]
 obj=Server()
 
 def siaran(message, currentClient):
@@ -42,6 +43,7 @@ def mengurus_client(client):
             client.close()
 
             alias = obj.nama[index]
+            alias2=obj.pasword[index]
             keluar= (f'{alias} telah meninggalkan chat'.encode())
             siaran(keluar, 0)
             obj.nama.remove(alias)
