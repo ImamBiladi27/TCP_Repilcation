@@ -3,9 +3,12 @@ import socket
 import pickle
 
 class Client:
-    nama = input(str('masukkan nama'))
+    nama = input(str('masukkan username'))
+    pw = input(str('masukkan pasword'))
     pickle_out=open("Serialize","wb")
     pickle.dump(nama,pickle_out)
+    pickle.dump(pw, pickle_out)
+
     pickle_out.close()
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     host = socket.gethostname()
@@ -17,8 +20,9 @@ def clien_menerima():
     while True:
         try:
             message = obj.client.recv(5024).decode('utf-8')
-            if message == 'nama?':
+            if message == 'nama?' and 'pw?':
                 obj.client.send(obj.nama.encode('utf-8'))
+                obj.client.send(obj.pw.encode('utf-8'))
             else:
                 print(message)
                 #pickle_out = message
